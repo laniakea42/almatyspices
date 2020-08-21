@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>cart</title>
+	<link rel="stylesheet" href="css/libs.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="preload">
+		<div class="sk-double-bounce">
+			<div class="sk-child sk-double-bounce-1"></div>
+			<div class="sk-child sk-double-bounce-2"></div>
+		</div>
+	</div>
+	
+	<header class="header">
+		<div class="upper-header">
+			<div class="container flex spb">
+				<div class="langs">
+					<a href="#" class="active">Рус</a>
+					<a href="#">Каз</a>
+				</div>
+	
+				<a href="#" target="_blank" class="col--inst flex center">
+					@almatyspices
+				</a>
+	
+				<form action="" class="cite-search flex">
+					<button class="btn d-hidden" type="submit">Найти</button>
+					<input type="text" required placeholder="Что Вы ищите?">
+					<div class="btn search-btn" type="submit"><i class="fa fa-search" aria-hidden="true"></i></div>
+				</form>
+	
+				<div class="cart-links">
+					<a href="cart.html"><img src="./img/cart.svg" alt=""><span class="cart-amount">0</span></a>
+					<span class="cart-comment">Корзина пуста</span>
+				</div>
+			</div>
+		</div>
+	
+		<div class="down-header">
+			<div class="nav--btn">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<div class="container flex center">
+				<a href="index.html" class="logo-link-h"><img src="./img/logo.png" alt=""></a>
+				<ul class="nav flex spb">
+					<li><a href="#" class="active">Продукция</a></li>
+					<li><a href="recipes.html">Рецепты</a></li>
+					<li><a href="about.html">О компании</a></li>
+					<li><a href="#">Партнерам</a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="contacts.html">Контакты</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	
+	<div class="modal" id="success-send">
+		<div class="modal__layer"></div>
+		<div class="modal__block">
+			<a href="#" class="close"></a>
+			<h4>Ваша заявка успешно отправлена</h4>
+		</div>
+	</div>
+	
+	<div class="modal" id="success-offer">
+		<div class="modal__layer"></div>
+		<div class="modal__block">
+			<div class="close"></div>
+			<h4>Ваш заказ успешно оформлен</h4>
+		</div>
+	</div>
+	
+	<button class="side-btn partners-side">Партнерам</button>
+	<button class="side-btn offer-side">Заказать</button>
+
+	<div class="wrapper card-page cart-page page">
+
+    <section class="breadcrumbs">
+      <ul class="container">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="#" class="current">Корзина</a></li>
+      </ul>
+    </section>
+
+    <main class="card-page">
+      <div class="container">
+        <h1>Корзина</h1>
+        <table>
+          <thead>
+            <tr>
+              <td>Наименование товара</td>
+              <td>Цена</td>
+              <td>Количество</td>
+              <td>Сумма</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="item">
+              <td class="item-name">
+                <div class="img-c"><img src="./img/cp1.jpg" alt=""></div>
+                Паприка копченая
+              </td>
+              <td><span class="price">75 тг.</span></td>
+              <td class="buy-row">
+                <div class="counter flex">
+                  <button class="minus" tabindex="0"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                  <input type="text" value="2" class="input-counter" tabindex="0">
+                  <button class="plus" tabindex="0"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                </div>
+              </td>
+              <td>
+                <div class="flex center spb">
+                  <span class="price">175тг.</span>
+                  <button class="close remove-from-cart"></button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr class="item">
+              <td class="item-name">
+                <div class="img-c"><img src="./img/cp1.jpg" alt=""></div>
+                Паприка молотая
+              </td>
+              <td><span class="price">75 тг.</span></td>
+              <td class="buy-row">
+                <div class="counter flex">
+                  <button class="minus" tabindex="0"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                  <input type="text" value="2" class="input-counter" tabindex="0">
+                  <button class="plus" tabindex="0"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                </div>
+              </td>
+              <td>
+                <div class="flex center spb">
+                  <span class="price">175тг.</span>
+                  <button class="close remove-from-cart"></button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr class="item">
+              <td class="item-name">
+                <div class="img-c"><img src="./img/cp1.jpg" alt=""></div>
+                <span>Перец черный горошек</spa>
+              </td>
+              <td><span class="price">75 тг.</span></td>
+              <td class="buy-row">
+                <div class="counter flex">
+                  <button class="minus" tabindex="0"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                  <input type="text" value="20" class="input-counter" tabindex="0">
+                  <button class="plus" tabindex="0"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                </div>
+              </td>
+              <td>
+                <div class="flex center spb">
+                  <span class="price">1 000тг.</span>
+                  <button class="close remove-from-cart"></button>
+               </div>
+              </td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th class="total">Итого: <span class="price">1925 тг.</span></th>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </main>
+
+    <section class="delivery">
+      <div class="container">
+        <h2>Оформление заказа</h2>
+        <form action="">
+
+          <div class="row-title">Контактная информация</div>
+          <div class="grid g-3">
+            <input type="text" required placeholder="Ваше имя">
+            <input type="text" required placeholder="+7 ( ___ ) - ___ - __ - __" class="tel">
+            <input type="text" required placeholder="Электронная почта">
+          </div>
+
+
+          <div class="row-title">Доставка</div>
+
+          <div class="grid g-3">
+            <label for="fifth" class="custom-label">
+              <input id="fifth" name="delivery" type="radio" class="custom-checkbox" checked>
+              <div class="text">
+                <b>Курьерская доставка</b><br>по г. Алматы
+              </div>
+              <span class="checkmark"></span>
+            </label>
+
+            <label for="fourth" class="custom-label">
+              <input id="fourth" name="delivery" type="radio" class="custom-checkbox" checked>
+              <div class="text">
+                <b>Доставка почтой</b><br>по Казахстану
+              </div>
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <input type="text" required placeholder="Адрес доставки: город, улица, дом, строение корпус, квартира">
+
+          <div class="row-title">Оплата</div>
+
+          <div class="grid g-3">
+
+            <label for="first" class="custom-label">
+              <input id="first" name="delivery12" type="radio" class="custom-checkbox" checked>
+              <div class="text">
+                <b>Наличный расчёт</b><br>оплата курьеру при получении товара
+              </div>
+              <span class="checkmark"></span>
+            </label>
+
+            <label for="second" class="custom-label">
+              <input id="second" name="delivery12" type="radio" class="custom-checkbox" checked>
+              <div class="text">
+                <b>Оплата картой</b><br>Visa / MasterCard при получении
+              </div>
+              <span class="checkmark"></span>
+            </label>
+
+          </div>
+
+          <div class="row-title">Комментарий к заказу</div>
+
+          <textarea placeholder="Сообщение"></textarea>
+
+          <label for="agr" class="custom-label agreement">
+            <input id="agr" name="delivery5" type="checkbox" class="custom-checkbox" checked>
+            <div class="text">
+              Я подтверждаю достоверность введенных мною сведений и даю согласие на обработку моих персональных данных в соответствие c <a href="#">Политикой Конфиденциальности</a> и <a href="#">Пользовательским соглашением</a>
+            </div>
+            <span class="checkmark"></span>
+          </label>
+
+          <div class="flex cart-total">
+            <div>Итого: <span class="price">1 925 тг.</span></div>
+            <button class="btn open--modal" data-modal="#success-offer">Оформить заказ</button>
+          </div>
+
+        </form>
+      </div>
+    </section>
+
+
+
+
+
+</div>
+
+<footer class="footer">
+  <div class="f-upper">
+    <div class="container grid">
+      <div class="f-col wider">
+        <div class="f-title">продукция</div>
+        <ul class="check--list">
+          <li><a href="catalog.html" class="active">Пряности</a></li>
+          <li><a href="category.html">Приправы</a></li>
+          <li><a href="category.html">Перцы</a></li>
+          <li><a href="category.html">Пряные травы</a></li>
+          <li><a href="category.html">Маринады для шашлыка и гриля</a></li>
+          <li><a href="category.html">Сушеные овощи</a></li>
+          <li><a href="category.html">Для профессионалов</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <div class="f-title">Навигация</div>
+        <ul class="check--list">
+          <li><a href="about.html">О компании</a></li>
+          <li><a href="#">Качество</a></li>
+          <li><a href="recipes.html">Рецепты</a></li>
+          <li><a href="#">Карьера</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <div class="f-title">Партнерам</div>
+        <ul class="check--list">
+          <li><a href="#">Как стать дилером</a></li>
+          <li><a href="#">Для ресторанов / кафе</a></li>
+          <li><a href="#">Оптовикам</a></li>
+        </ul>
+      </div>
+      <div class="f-col f-cts">
+        <div class="f-title">Контакты</div>
+        <div class="col--location">Казахстан, г. Алматы,<br>пр. Утеген Батыра, 15</div>
+        <div class="col--phone">
+          <a href="tel:+7(747)200-01-92">+7 (747) 200-01-92</a>
+          <a href="tel:+7(747)243-72-19">+7 (747) 243-72-19</a>
+        </div>
+        <div class="col--email">
+          <a href="mailto:commerce@almatyspices.kz" class="mail-link">commerce@almatyspices.kz</a>
+        </div>
+        <div class="col--inst">
+          <a href="#" target="_blank">@almatyspices</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="f-down">
+    <div class="container flex spb center">
+      <p class="copy">Copyright &copy; 2019 ТОО «Almaty Spices». All rights reserved</p>
+      <a href="https://artmedia.kz/" target="_blank">Создание сайта
+        <img src="./img/artmedia.png" alt="">
+      </a>
+    </div>
+  </div>
+</footer>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/libs.js"></script>
+<!-- <script src="js/wow.min.js"></script> -->
+<script> new WOW().init(); </script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

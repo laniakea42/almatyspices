@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>contacts</title>
+	<link rel="stylesheet" href="css/libs.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="preload">
+		<div class="sk-double-bounce">
+			<div class="sk-child sk-double-bounce-1"></div>
+			<div class="sk-child sk-double-bounce-2"></div>
+		</div>
+	</div>
+	
+	<header class="header">
+		<div class="upper-header">
+			<div class="container flex spb">
+				<div class="langs">
+					<a href="#" class="active">Рус</a>
+					<a href="#">Каз</a>
+				</div>
+	
+				<a href="#" target="_blank" class="col--inst flex center">
+					@almatyspices
+				</a>
+	
+				<form action="" class="cite-search flex">
+					<button class="btn d-hidden" type="submit">Найти</button>
+					<input type="text" required placeholder="Что Вы ищите?">
+					<div class="btn search-btn" type="submit"><i class="fa fa-search" aria-hidden="true"></i></div>
+				</form>
+	
+				<div class="cart-links">
+					<a href="cart.html"><img src="./img/cart.svg" alt=""><span class="cart-amount">0</span></a>
+					<span class="cart-comment">Корзина пуста</span>
+				</div>
+			</div>
+		</div>
+	
+		<div class="down-header">
+			<div class="nav--btn">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<div class="container flex center">
+				<a href="index.html" class="logo-link-h"><img src="./img/logo.png" alt=""></a>
+				<ul class="nav flex spb">
+					<li><a href="#" class="active">Продукция</a></li>
+					<li><a href="recipes.html">Рецепты</a></li>
+					<li><a href="about.html">О компании</a></li>
+					<li><a href="#">Партнерам</a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="contacts.html">Контакты</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	
+	<div class="modal" id="success-send">
+		<div class="modal__layer"></div>
+		<div class="modal__block">
+			<a href="#" class="close"></a>
+			<h4>Ваша заявка успешно отправлена</h4>
+		</div>
+	</div>
+	
+	<div class="modal" id="success-offer">
+		<div class="modal__layer"></div>
+		<div class="modal__block">
+			<div class="close"></div>
+			<h4>Ваш заказ успешно оформлен</h4>
+		</div>
+	</div>
+	
+	<button class="side-btn partners-side">Партнерам</button>
+	<button class="side-btn offer-side">Заказать</button>
+
+	<div class="wrapper contacts page">
+
+    <section class="breadcrumbs">
+      <ul class="container">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="#" class="current">Контакты</a></li>
+      </ul>
+		</section>
+		
+		<main class="main-part">
+			<div class="container">
+				<h1>Контакты</h1>
+				<div class="grid wow fadeIn">
+					<div class="col--location">Казахстан, г. Алматы, пр. Утеген Батыра, 15</div>
+					<div class="col--phone">
+						<a href="tel:+7 (747) 200-01-92">+7 (747) 200-01-92</a>
+						<a href="tel:+7 (747) 243-72-19">+7 (747) 243-72-19</a>
+					</div>
+					<div class="col--email">
+						<a href="mailto:commerce@almatyspices.kz" class="mail-link">commerce@almatyspices.kz</a>
+					</div>
+					<div class="col--inst"><a href="#" target="_blank">@almatyspices</a></div>
+				</div>
+			</div>
+
+			<div class="map-c wow fadeIn" data-wow-duration="3s">
+				<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Afc059de4775d7945b2bf520fcb7875ebb4e76b74b433a151720d170591038f04&amp;source=constructor" width="100%" height="566" frameborder="0"></iframe>
+			</div>
+		</main>
+
+		<section class="contactus wow fadeInUp" data-wow-offset="35">
+			<div class="container">
+			<h2>Обратная связь</h2>
+			<form action="" class="contactus-grid">
+				<input type="text" required placeholder="Ваше имя">
+				<input type="text" required placeholder="+7(___)-___-__-__" class="tel">
+				<input type="text" required placeholder="Электронная почта">
+
+				<textarea placeholder="Сообщение"></textarea>
+				<div class="g-recaptcha"><div style="width: 304px; height: 78px;"><div><iframe src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LfycasZAAAAAOleQj_j_cJoz1tKKWUcEs1p_Thw&amp;co=aHR0cDovL2x1Y2t5ZW5nbGlzaC45ei5rejo4MA..&amp;hl=ru&amp;v=aUMtGvKgJZfNs4PdY842Qp03&amp;size=normal&amp;cb=3msqieq2sd36" width="304" height="78" role="presentation" name="a-yvy55kr77e2b" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response-2" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div>
+			</form>
+			<button class="btn open--modal wow fadeInUp" data-modal="#success-send" data-wow-delay="1s" type="submit">Отправить</button>
+			</div>
+		</section>
+
+    
+  </div>
+
+  <footer class="footer">
+    <div class="f-upper">
+      <div class="container grid">
+        <div class="f-col wider">
+          <div class="f-title">продукция</div>
+          <ul class="check--list">
+            <li><a href="catalog.html" class="active">Пряности</a></li>
+            <li><a href="category.html">Приправы</a></li>
+            <li><a href="category.html">Перцы</a></li>
+            <li><a href="category.html">Пряные травы</a></li>
+            <li><a href="category.html">Маринады для шашлыка и гриля</a></li>
+            <li><a href="category.html">Сушеные овощи</a></li>
+            <li><a href="category.html">Для профессионалов</a></li>
+          </ul>
+        </div>
+        <div class="f-col">
+          <div class="f-title">Навигация</div>
+          <ul class="check--list">
+            <li><a href="about.html">О компании</a></li>
+            <li><a href="#">Качество</a></li>
+            <li><a href="recipes.html">Рецепты</a></li>
+            <li><a href="#">Карьера</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="f-col">
+          <div class="f-title">Партнерам</div>
+          <ul class="check--list">
+            <li><a href="#">Как стать дилером</a></li>
+            <li><a href="#">Для ресторанов / кафе</a></li>
+            <li><a href="#">Оптовикам</a></li>
+          </ul>
+        </div>
+        <div class="f-col f-cts">
+          <div class="f-title">Контакты</div>
+          <div class="col--location">Казахстан, г. Алматы,<br>пр. Утеген Батыра, 15</div>
+          <div class="col--phone">
+            <a href="tel:+7(747)200-01-92">+7 (747) 200-01-92</a>
+            <a href="tel:+7(747)243-72-19">+7 (747) 243-72-19</a>
+          </div>
+          <div class="col--email">
+            <a href="mailto:commerce@almatyspices.kz" class="mail-link">commerce@almatyspices.kz</a>
+          </div>
+          <div class="col--inst">
+            <a href="#" target="_blank">@almatyspices</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="f-down">
+      <div class="container flex spb center">
+        <p class="copy">Copyright &copy; 2019 ТОО «Almaty Spices». All rights reserved</p>
+        <a href="https://artmedia.kz/" target="_blank">Создание сайта
+          <img src="./img/artmedia.png" alt="">
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/libs.js"></script>
+  <!-- <script src="js/wow.min.js"></script> -->
+  <script> new WOW().init(); </script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

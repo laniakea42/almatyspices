@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Index</title>
+	<link rel="stylesheet" href="css/libs.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="preload">
+		<div class="sk-double-bounce">
+			<div class="sk-child sk-double-bounce-1"></div>
+			<div class="sk-child sk-double-bounce-2"></div>
+		</div>
+	</div>
+	
+	<header class="header">
+		<div class="upper-header">
+			<div class="container flex spb">
+				<div class="langs">
+					<a href="#" class="active">Рус</a>
+					<a href="#">Каз</a>
+				</div>
+	
+				<a href="#" target="_blank" class="col--inst flex center">
+					@almatyspices
+				</a>
+	
+				<form action="" class="cite-search flex">
+					<button class="btn d-hidden" type="submit">Найти</button>
+					<input type="text" required placeholder="Что Вы ищите?">
+					<div class="btn search-btn" type="submit"><i class="fa fa-search" aria-hidden="true"></i></div>
+				</form>
+	
+				<div class="cart-links">
+					<a href="cart.html"><img src="./img/cart.svg" alt=""><span class="cart-amount">0</span></a>
+					<span class="cart-comment">Корзина пуста</span>
+				</div>
+			</div>
+		</div>
+	
+		<div class="down-header">
+			<div class="nav--btn">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<div class="container flex center">
+				<a href="index.html" class="logo-link-h"><img src="./img/logo.png" alt=""></a>
+				<ul class="nav flex spb">
+					<li><a href="#" class="active">Продукция</a></li>
+					<li><a href="recipes.html">Рецепты</a></li>
+					<li><a href="about.html">О компании</a></li>
+					<li><a href="#">Партнерам</a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="contacts.html">Контакты</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	
+	<div class="modal" id="success-send">
+		<div class="modal__layer"></div>
+		<div class="modal__block">
+			<a href="#" class="close"></a>
+			<h4>Ваша заявка успешно отправлена</h4>
+		</div>
+	</div>
+	
+	<div class="modal" id="success-offer">
+		<div class="modal__layer"></div>
+		<div class="modal__block">
+			<div class="close"></div>
+			<h4>Ваш заказ успешно оформлен</h4>
+		</div>
+	</div>
+	
+	<button class="side-btn partners-side">Партнерам</button>
+	<button class="side-btn offer-side">Заказать</button>
+
+	<div class="wrapper">
+
+		<section class="i-slider">
+			<div class="index-slick-slider">
+				<div class="slider__item">
+					<div class="img-c"><img src="./img/slider.jpg" alt=""></div>
+					<div class="container">
+						<h1>
+							<span class="large">Лучший продукт</span><br>
+							в каждый дом, в любом уголке мира
+						</h1>
+						<a href="#" class="btn">Подробнее</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="grid-index-container">
+			<div class="container">
+				<h2>Продукция «ALMATY SPICES»</h2>
+				<div class="grid">
+
+					<a href="#" class="card wow zoomIn" data-wow-offset="-150"data-wow-duration="1s">
+						<div class="img-c"><img src="./img/cp1.jpg" alt=""></div>
+						<p>Пряности</p>
+					</a>
+
+					<a href="#" class="card wow zoomIn" data-wow-offset="-150"data-wow-duration="1s">
+						<div class="img-c"><img src="./img/cp2.jpg" alt=""></div>
+						<p>Приправы</p>
+					</a>
+
+					<a href="#" class="card wow zoomIn" data-wow-offset="-150"data-wow-duration="1s">
+						<div class="img-c"><img src="./img/cp3.jpg" alt=""></div>
+						<p>Перцы</p>
+					</a>
+
+					<a href="#" class="card wow zoomIn" data-wow-offset="-150"data-wow-duration="1s">
+						<div class="img-c"><img src="./img/cp4.jpg" alt=""></div>
+						<p>Пряные травы</p>
+					</a>
+
+					<a href="#" class="card wide wow zoomIn" data-wow-offset="-150"data-wow-duration="1s" data-wow-delay="1s">
+						<div class="img-c"><img src="./img/cp5.jpg" alt=""></div>
+						<p>Маринады<br>для шашлыка и гриля</p>
+					</a>
+
+					<a href="#" class="card wide wow zoomIn" data-wow-offset="-150"data-wow-duration="1s" data-wow-delay="1s">
+						<div class="img-c"><img src="./img/cp6.jpg" alt=""></div>
+						<p>Сушеные овощи</p>
+					</a>
+
+					<a href="#" class="card wide wow zoomIn" data-wow-offset="-150"data-wow-duration="1s" data-wow-delay="1s">
+						<div class="img-c"><img src="./img/cp7.jpg" alt=""></div>
+						<p>Для профессионалов</p>
+					</a>
+
+				</div>
+			</div>
+		</section>
+
+
+		<section class="index-about wow fadeInUp" data-wow-offset="-150"data-wow-duration="2s">
+			<div class="container">
+				<div class="right-half">
+					<h2>О компании</h2>
+					<p>На казахстанском рынке компания Almaty Spices существует
+						с января 2018 года и имеет собственный завод по производству специй, приправ и вкусовых ингредиентов, лучшие сорта которых поставляются напрямую из стран Востока.</p>
+					<p>Торговые марки Almaty Spices и Origani охватывают широкий спектр продукции: натуральные специи, пряности и приправы, маринады и горчицы в различной фасовке и упаковке, предназначенные как для ценителей традиционной кухни,
+						так и для продвинутых любителей кулинарных экспериментов.</p>
+
+					<div class="grid">
+						<div class="img-c wow fadeInUp" data-wow-offset="-55"><img src="./img/logo.png" alt=""></div>
+						<div class="img-c wow fadeInUp" data-wow-offset="-150"data-wow-delay="1s"><img src="./img/oregani_bg.jpg" alt=""></div>
+						<div class="img-c wow fadeInUp" data-wow-offset="-150"data-wow-delay="2s"><img src="./img/logo.png" alt=""></div>
+					</div>
+					<a href="about.html" class="btn">Подробнее о компании</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="for-partners wow fadeIn" data-wow-offset="-150" data-wow-duration="2s">
+			<div class="container">
+				<h1>Партнерам</h1>
+				<div class="grid to-2">
+					<div class="col">
+						<p>Приглашаем к сотрудничеству компании розничной торговли, пищевой промышленности, ресторанного бизнеса
+							на взаимовыгодных условиях!</p>
+						<p>Мы предлагаем:</p>
+						<ul class="check--list">
+							<li>регулярные поставки,</li>
+							<li>разумные цены,</li>
+							<li>широкий ассортимент</li>
+						</ul>
+						<p>Если Вы хотите узнать более подробную информацию о работе с партнёрами, задать интересующие Вас вопросы, заполните эту форму и наш сотрудник свяжется с Вами в ближайшее время.</p>
+						<p>Или позвоните к нам по номеру <a href="tel:+7 747 2000 192" class="in-p-link">+7 747 2000 192</a></p>
+					</div>
+					<div class="col">
+						<form action="" class="flex">
+							<input type="text" required placeholder="Ваше имя">
+							<input type="text" required placeholder="Название компании">
+							<input type="text" required placeholder="Номер телефона" class="tel">
+							<textarea placeholder="Сообщение"></textarea>
+							<div class="flex spb">
+								<div class="g-recaptcha"><div style="width: 304px; height: 78px;"><div><iframe src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LfycasZAAAAAOleQj_j_cJoz1tKKWUcEs1p_Thw&amp;co=aHR0cDovL2x1Y2t5ZW5nbGlzaC45ei5rejo4MA..&amp;hl=ru&amp;v=TPiWapjoyMdQOtxLT9_b4n2W&amp;size=normal&amp;cb=v2klqvptq6g9" width="304" height="78" role="presentation" name="a-rdeobw1pfdra" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response-2" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div>
+								<button class="btn open--modal" data-modal="#success-send" type="submit">Отправить</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="news-block">
+			<div class="container">
+				<h2>Новости и события</h2>
+				<div class="grid to-2">
+					<a href="#" class="news-card wow fadeInUp" data-wow-offset="-150"data-wow-duration="2s">
+						<div class="img-c"><img src="./img/n1.jpg" alt=""></div>
+						<div class="content">
+							<div class="time">15 августа, 2019 г.</div>
+							<div class="news-title">Ученые рассказали, как худеть и оставаться сытым</div>
+							<p class="text">Британские ученые выяснили, как похудеть, съедая привычное количество пищи. Главное, употреблять низкокалорийные продукты.</p>
+						</div>
+					</a>
+					<a href="#" class="news-card wow fadeInUp" data-wow-offset="-150"data-wow-duration="2s" data-wow-delay="1s">
+						<div class="img-c"><img src="./img/n2.jpg" alt=""></div>
+						<div class="content">
+							<div class="time">15 августа, 2019 г.</div>
+							<div class="news-title">На вкус и цвет... Что влияет на наши предпочтения в еде?</div>
+							<p class="text">Есть множество факторов, как генетических, так и психологических, которые влияют на то, нравится нам тот или иной определенный вкус или нет. Почему же мы любим одну еду, .. и ненавидим другую?</p>
+						</div>
+					</a>
+				</div>
+			</div>
+		</section>
+
+
+	</div>
+
+    <footer class="footer">
+      <div class="f-upper">
+        <div class="container grid">
+          <div class="f-col wider">
+            <div class="f-title">продукция</div>
+            <ul class="check--list">
+              <li><a href="catalog.html" class="active">Пряности</a></li>
+              <li><a href="category.html">Приправы</a></li>
+              <li><a href="category.html">Перцы</a></li>
+              <li><a href="category.html">Пряные травы</a></li>
+              <li><a href="category.html">Маринады для шашлыка и гриля</a></li>
+              <li><a href="category.html">Сушеные овощи</a></li>
+              <li><a href="category.html">Для профессионалов</a></li>
+            </ul>
+          </div>
+          <div class="f-col">
+            <div class="f-title">Навигация</div>
+            <ul class="check--list">
+              <li><a href="about.html">О компании</a></li>
+              <li><a href="#">Качество</a></li>
+              <li><a href="recipes.html">Рецепты</a></li>
+              <li><a href="#">Карьера</a></li>
+              <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="f-col">
+            <div class="f-title">Партнерам</div>
+            <ul class="check--list">
+              <li><a href="#">Как стать дилером</a></li>
+              <li><a href="#">Для ресторанов / кафе</a></li>
+              <li><a href="#">Оптовикам</a></li>
+            </ul>
+          </div>
+          <div class="f-col f-cts">
+            <div class="f-title">Контакты</div>
+            <div class="col--location">Казахстан, г. Алматы,<br>пр. Утеген Батыра, 15</div>
+            <div class="col--phone">
+              <a href="tel:+7(747)200-01-92">+7 (747) 200-01-92</a>
+              <a href="tel:+7(747)243-72-19">+7 (747) 243-72-19</a>
+            </div>
+            <div class="col--email">
+              <a href="mailto:commerce@almatyspices.kz" class="mail-link">commerce@almatyspices.kz</a>
+            </div>
+            <div class="col--inst">
+              <a href="#" target="_blank">@almatyspices</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="f-down">
+        <div class="container flex spb center">
+          <p class="copy">Copyright &copy; 2019 ТОО «Almaty Spices». All rights reserved</p>
+          <a href="https://artmedia.kz/" target="_blank">Создание сайта
+            <img src="./img/artmedia.png" alt="">
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/libs.js"></script>
+		<!-- <script src="js/wow.min.js"></script> -->
+		<script> 
+			wow = new WOW({
+				boxClass:     'wow',      
+				animateClass: 'animated', 
+				offset:       0,          
+				live:         true        
+		})
+		wow.init();
+		</script>
+		<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

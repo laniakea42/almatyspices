@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>category</title>
+	<link rel="stylesheet" href="css/libs.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="preload">
+		<div class="sk-double-bounce">
+			<div class="sk-child sk-double-bounce-1"></div>
+			<div class="sk-child sk-double-bounce-2"></div>
+		</div>
+	</div>
+	
+	<header class="header">
+		<div class="upper-header">
+			<div class="container flex spb">
+				<div class="langs">
+					<a href="#" class="active">Рус</a>
+					<a href="#">Каз</a>
+				</div>
+	
+				<a href="#" target="_blank" class="col--inst flex center">
+					@almatyspices
+				</a>
+	
+				<form action="" class="cite-search flex">
+					<button class="btn d-hidden" type="submit">Найти</button>
+					<input type="text" required placeholder="Что Вы ищите?">
+					<div class="btn search-btn" type="submit"><i class="fa fa-search" aria-hidden="true"></i></div>
+				</form>
+	
+				<div class="cart-links">
+					<a href="cart.html"><img src="./img/cart.svg" alt=""><span class="cart-amount">0</span></a>
+					<span class="cart-comment">Корзина пуста</span>
+				</div>
+			</div>
+		</div>
+	
+		<div class="down-header">
+			<div class="nav--btn">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<div class="container flex center">
+				<a href="index.html" class="logo-link-h"><img src="./img/logo.png" alt=""></a>
+				<ul class="nav flex spb">
+					<li><a href="#" class="active">Продукция</a></li>
+					<li><a href="recipes.html">Рецепты</a></li>
+					<li><a href="about.html">О компании</a></li>
+					<li><a href="#">Партнерам</a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="contacts.html">Контакты</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	
+	<div class="modal" id="success-send">
+		<div class="modal__layer"></div>
+		<div class="modal__block">
+			<a href="#" class="close"></a>
+			<h4>Ваша заявка успешно отправлена</h4>
+		</div>
+	</div>
+	
+	<div class="modal" id="success-offer">
+		<div class="modal__layer"></div>
+		<div class="modal__block">
+			<div class="close"></div>
+			<h4>Ваш заказ успешно оформлен</h4>
+		</div>
+	</div>
+	
+	<button class="side-btn partners-side">Партнерам</button>
+	<button class="side-btn offer-side">Заказать</button>
+
+	<div class="wrapper category page">
+
+    <section class="breadcrumbs">
+      <ul class="container">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="catalog.html">Продукция</a></li>
+        <li><a href="#" class="current">Перцы</a></li>
+      </ul>
+    </section>
+
+    <main>
+      <div class="container">
+        <h1>Перцы</h1>
+
+        <div class="grid category-grid">
+          <div class="sidemenu-col">
+            <ul>
+              <li><a href="#">Пряности</a></li>
+              <li><a href="#">Приправы</a></li>
+              <li><a href="#" class="active">Перцы</a></li>
+              <li><a href="#">Пряные травы</a></li>
+              <li><a href="#">Маринады для шашлыка и гриля</a></li>
+              <li><a href="#">Сушеные овощи</a></li>
+              <li><a href="#">Для профессионалов</a></li>
+            </ul>
+          </div>
+
+          <div class="right-container">
+            <div class="grid goods-grid">
+
+              <a href="card.html" class="tall-card">
+                <div class="img-c"><img src="./img/cp1.jpg" alt=""></div>
+                <div class="card-menu">
+                  <p class="g-name">Паприка молотая</p>
+                  <p class="price">75 тг.</p>
+                  <div class="buy-row grid">
+                    <div class="counter flex">
+                      <button class="minus" tabindex="0"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                      <input type="text" value="2" class="input-counter" tabindex="0">
+                      <button class="plus" tabindex="0"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                    </div>
+                    <button class="btn btn-add-to-cart"><img src="./img/whitebag.png" alt=""></button>
+                  </div>
+                </div>
+              </a>
+  
+              <a href="card.html" class="tall-card">
+                <div class="img-c"><img src="./img/cp1.jpg" alt=""></div>
+                <div class="card-menu">
+                  <p class="g-name">Паприка копченая</p>
+                  <p class="price">75 тг.</p>
+                  <div class="buy-row grid">
+                    <div class="counter flex">
+                      <button class="minus" tabindex="0"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                      <input type="text" value="2" class="input-counter" tabindex="0">
+                      <button class="plus" tabindex="0"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                    </div>
+                    <button class="btn btn-add-to-cart"><img src="./img/whitebag.png" alt=""></button>
+                  </div>
+                </div>
+              </a>
+  
+              <a href="card.html" class="tall-card">
+                <div class="img-c"><img src="./img/cp2.jpg" alt=""></div>
+                <div class="card-menu">
+                  <p class="g-name">Перец черный горошек</p>
+                  <p class="price">75 тг.</p>
+                  <div class="buy-row grid">
+                    <div class="counter flex">
+                      <button class="minus" tabindex="0"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                      <input type="text" value="2" class="input-counter" tabindex="0">
+                      <button class="plus" tabindex="0"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                    </div>
+                    <button class="btn btn-add-to-cart"><img src="./img/whitebag.png" alt=""></button>
+                  </div>
+                </div>
+              </a>
+  
+              <a href="card.html" class="tall-card">
+                <div class="img-c"><img src="./img/cp1.jpg" alt=""></div>
+                <div class="card-menu">
+                  <p class="g-name">Перец красный измельченный</p>
+                  <p class="price">75 тг.</p>
+                  <div class="buy-row grid">
+                    <div class="counter flex">
+                      <button class="minus" tabindex="0"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                      <input type="text" value="2" class="input-counter" tabindex="0">
+                      <button class="plus" tabindex="0"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                    </div>
+                    <button class="btn btn-add-to-cart"><img src="./img/whitebag.png" alt=""></button>
+                  </div>
+                </div>
+              </a>
+  
+              <a href="card.html" class="tall-card">
+                <div class="img-c"><img src="./img/cp2.jpg" alt=""></div>
+                <div class="card-menu">
+                  <p class="g-name">Перец красный молотый острый</p>
+                  <p class="price">75 тг.</p>
+                  <div class="buy-row grid">
+                    <div class="counter flex">
+                      <button class="minus" tabindex="0"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                      <input type="text" value="2" class="input-counter" tabindex="0">
+                      <button class="plus" tabindex="0"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                    </div>
+                    <button class="btn btn-add-to-cart"><img src="./img/whitebag.png" alt=""></button>
+                  </div>
+                </div>
+              </a>
+  
+              <a href="card.html" class="tall-card">
+                <div class="img-c"><img src="./img/cp2.jpg" alt=""></div>
+                <div class="card-menu">
+                  <p class="g-name">Перец красный молотый острый</p>
+                  <p class="price">75 тг.</p>
+                  <div class="buy-row grid">
+                    <div class="counter flex">
+                      <button class="minus" tabindex="0"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                      <input type="text" value="2" class="input-counter" tabindex="0">
+                      <button class="plus" tabindex="0"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                    </div>
+                    <button class="btn btn-add-to-cart"><img src="./img/whitebag.png" alt=""></button>
+                  </div>
+                </div>
+              </a>
+  
+              <a href="card.html" class="tall-card">
+                <div class="img-c"><img src="./img/cp1.jpg" alt=""></div>
+                <div class="card-menu">
+                  <p class="g-name">Паприка молотая</p>
+                  <p class="price">75 тг.</p>
+                  <div class="buy-row grid">
+                    <div class="counter flex">
+                      <button class="minus" tabindex="0"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                      <input type="text" value="2" class="input-counter" tabindex="0">
+                      <button class="plus" tabindex="0"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                    </div>
+                    <button class="btn btn-add-to-cart"><img src="./img/whitebag.png" alt=""></button>
+                  </div>
+                </div>
+              </a>
+  
+              <a href="card.html" class="tall-card">
+                <div class="img-c"><img src="./img/cp1.jpg" alt=""></div>
+                <div class="card-menu">
+                  <p class="g-name">Паприка копченая</p>
+                  <p class="price">75 тг.</p>
+                  <div class="buy-row grid">
+                    <div class="counter flex">
+                      <button class="minus" tabindex="0"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                      <input type="text" value="2" class="input-counter" tabindex="0">
+                      <button class="plus" tabindex="0"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                    </div>
+                    <button class="btn btn-add-to-cart"><img src="./img/whitebag.png" alt=""></button>
+                  </div>
+                </div>
+              </a>
+  
+              <a href="card.html" class="tall-card">
+                <div class="img-c"><img src="./img/cp2.jpg" alt=""></div>
+                <div class="card-menu">
+                  <p class="g-name">Перец черный горошек</p>
+                  <p class="price">75 тг.</p>
+                  <div class="buy-row grid">
+                    <div class="counter flex">
+                      <button class="minus" tabindex="0"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                      <input type="text" value="2" class="input-counter" tabindex="0">
+                      <button class="plus" tabindex="0"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                    </div>
+                    <button class="btn btn-add-to-cart"><img src="./img/whitebag.png" alt=""></button>
+                  </div>
+                </div>
+              </a>
+  
+              <a href="card.html" class="tall-card">
+                <div class="img-c"><img src="./img/cp1.jpg" alt=""></div>
+                <div class="card-menu">
+                  <p class="g-name">Перец красный измельченный</p>
+                  <p class="price">75 тг.</p>
+                  <div class="buy-row grid">
+                    <div class="counter flex">
+                      <button class="minus" tabindex="0"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                      <input type="text" value="2" class="input-counter" tabindex="0">
+                      <button class="plus" tabindex="0"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                    </div>
+                    <button class="btn btn-add-to-cart"><img src="./img/whitebag.png" alt=""></button>
+                  </div>
+                </div>
+              </a>
+  
+              <a href="card.html" class="tall-card">
+                <div class="img-c"><img src="./img/cp2.jpg" alt=""></div>
+                <div class="card-menu">
+                  <p class="g-name">Перец красный молотый острый</p>
+                  <p class="price">75 тг.</p>
+                  <div class="buy-row grid">
+                    <div class="counter flex">
+                      <button class="minus" tabindex="0"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                      <input type="text" value="2" class="input-counter" tabindex="0">
+                      <button class="plus" tabindex="0"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                    </div>
+                    <button class="btn btn-add-to-cart"><img src="./img/whitebag.png" alt=""></button>
+                  </div>
+                </div>
+              </a>
+  
+              <a href="card.html" class="tall-card">
+                <div class="img-c"><img src="./img/cp2.jpg" alt=""></div>
+                <div class="card-menu">
+                  <p class="g-name">Перец красный молотый острый</p>
+                  <p class="price">75 тг.</p>
+                  <div class="buy-row grid">
+                    <div class="counter flex">
+                      <button class="minus" tabindex="0"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                      <input type="text" value="2" class="input-counter" tabindex="0">
+                      <button class="plus" tabindex="0"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                    </div>
+                    <button class="btn btn-add-to-cart"><img src="./img/whitebag.png" alt=""></button>
+                  </div>
+                </div>
+              </a>
+  
+              <a href="card.html" class="tall-card">
+                <div class="img-c"><img src="./img/cp1.jpg" alt=""></div>
+                <div class="card-menu">
+                  <p class="g-name">Паприка молотая</p>
+                  <p class="price">75 тг.</p>
+                  <div class="buy-row grid">
+                    <div class="counter flex">
+                      <button class="minus" tabindex="0"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                      <input type="text" value="2" class="input-counter" tabindex="0">
+                      <button class="plus" tabindex="0"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                    </div>
+                    <button class="btn btn-add-to-cart"><img src="./img/whitebag.png" alt=""></button>
+                  </div>
+                </div>
+              </a>
+  
+              <a href="card.html" class="tall-card">
+                <div class="img-c"><img src="./img/cp1.jpg" alt=""></div>
+                <div class="card-menu">
+                  <p class="g-name">Паприка копченая</p>
+                  <p class="price">75 тг.</p>
+                  <div class="buy-row grid">
+                    <div class="counter flex">
+                      <button class="minus" tabindex="0"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                      <input type="text" value="2" class="input-counter" tabindex="0">
+                      <button class="plus" tabindex="0"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                    </div>
+                    <button class="btn btn-add-to-cart"><img src="./img/whitebag.png" alt=""></button>
+                  </div>
+                </div>
+              </a>
+  
+              <a href="card.html" class="tall-card">
+                <div class="img-c"><img src="./img/cp2.jpg" alt=""></div>
+                <div class="card-menu">
+                  <p class="g-name">Перец черный горошек</p>
+                  <p class="price">75 тг.</p>
+                  <div class="buy-row grid">
+                    <div class="counter flex">
+                      <button class="minus" tabindex="0"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                      <input type="text" value="2" class="input-counter" tabindex="0">
+                      <button class="plus" tabindex="0"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                    </div>
+                    <button class="btn btn-add-to-cart"><img src="./img/whitebag.png" alt=""></button>
+                  </div>
+                </div>
+              </a>
+  
+              <a href="card.html" class="tall-card">
+                <div class="img-c"><img src="./img/cp1.jpg" alt=""></div>
+                <div class="card-menu">
+                  <p class="g-name">Перец красный измельченный</p>
+                  <p class="price">75 тг.</p>
+                  <div class="buy-row grid">
+                    <div class="counter flex">
+                      <button class="minus" tabindex="0"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                      <input type="text" value="2" class="input-counter" tabindex="0">
+                      <button class="plus" tabindex="0"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                    </div>
+                    <button class="btn btn-add-to-cart"><img src="./img/whitebag.png" alt=""></button>
+                  </div>
+                </div>
+              </a>
+  
+              <a href="card.html" class="tall-card">
+                <div class="img-c"><img src="./img/cp2.jpg" alt=""></div>
+                <div class="card-menu">
+                  <p class="g-name">Перец красный молотый острый</p>
+                  <p class="price">75 тг.</p>
+                  <div class="buy-row grid">
+                    <div class="counter flex">
+                      <button class="minus" tabindex="0"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                      <input type="text" value="2" class="input-counter" tabindex="0">
+                      <button class="plus" tabindex="0"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                    </div>
+                    <button class="btn btn-add-to-cart"><img src="./img/whitebag.png" alt=""></button>
+                  </div>
+                </div>
+              </a>
+  
+              <a href="card.html" class="tall-card">
+                <div class="img-c"><img src="./img/cp2.jpg" alt=""></div>
+                <div class="card-menu">
+                  <p class="g-name">Перец красный молотый острый</p>
+                  <p class="price">75 тг.</p>
+                  <div class="buy-row grid">
+                    <div class="counter flex">
+                      <button class="minus" tabindex="0"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                      <input type="text" value="2" class="input-counter" tabindex="0">
+                      <button class="plus" tabindex="0"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                    </div>
+                    <button class="btn btn-add-to-cart"><img src="./img/whitebag.png" alt=""></button>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="pagination">
+              <ul class="flex">
+                <li><a href="#" class="prev-arr"></a></li>
+                <li><a href="#" class="active">1</a></li>
+                <li><a href="#" class="">2</a></li>
+                <li><a href="#" class="">3</a></li>
+                <li><a href="#" class="next-arr"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+
+
+
+
+	</div>
+
+    <footer class="footer">
+      <div class="f-upper">
+        <div class="container grid">
+          <div class="f-col wider">
+            <div class="f-title">продукция</div>
+            <ul class="check--list">
+              <li><a href="catalog.html" class="active">Пряности</a></li>
+              <li><a href="category.html">Приправы</a></li>
+              <li><a href="category.html">Перцы</a></li>
+              <li><a href="category.html">Пряные травы</a></li>
+              <li><a href="category.html">Маринады для шашлыка и гриля</a></li>
+              <li><a href="category.html">Сушеные овощи</a></li>
+              <li><a href="category.html">Для профессионалов</a></li>
+            </ul>
+          </div>
+          <div class="f-col">
+            <div class="f-title">Навигация</div>
+            <ul class="check--list">
+              <li><a href="about.html">О компании</a></li>
+              <li><a href="#">Качество</a></li>
+              <li><a href="recipes.html">Рецепты</a></li>
+              <li><a href="#">Карьера</a></li>
+              <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="f-col">
+            <div class="f-title">Партнерам</div>
+            <ul class="check--list">
+              <li><a href="#">Как стать дилером</a></li>
+              <li><a href="#">Для ресторанов / кафе</a></li>
+              <li><a href="#">Оптовикам</a></li>
+            </ul>
+          </div>
+          <div class="f-col f-cts">
+            <div class="f-title">Контакты</div>
+            <div class="col--location">Казахстан, г. Алматы,<br>пр. Утеген Батыра, 15</div>
+            <div class="col--phone">
+              <a href="tel:+7(747)200-01-92">+7 (747) 200-01-92</a>
+              <a href="tel:+7(747)243-72-19">+7 (747) 243-72-19</a>
+            </div>
+            <div class="col--email">
+              <a href="mailto:commerce@almatyspices.kz" class="mail-link">commerce@almatyspices.kz</a>
+            </div>
+            <div class="col--inst">
+              <a href="#" target="_blank">@almatyspices</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="f-down">
+        <div class="container flex spb center">
+          <p class="copy">Copyright &copy; 2019 ТОО «Almaty Spices». All rights reserved</p>
+          <a href="https://artmedia.kz/" target="_blank">Создание сайта
+            <img src="./img/artmedia.png" alt="">
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/libs.js"></script>
+		<!-- <script src="js/wow.min.js"></script> -->
+		<script> new WOW().init(); </script>
+		<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
